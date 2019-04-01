@@ -1,28 +1,14 @@
-import React, { Component } from "react"
-import "./App.css"
-import logo from "./logo.svg"
+import React from "react"
+import { nengos } from "./nengo"
+import { NengoCounter } from "./nengo-counter"
 
-class App extends Component {
-  public render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    )
-  }
-}
+const App = () => (
+  <>
+    <h1>年号早見表</h1>
+    {nengos.map((nengo, i) => (
+      <NengoCounter nengo={nengo} from={new Date()} key={i} />
+    ))}
+  </>
+)
 
 export default App
