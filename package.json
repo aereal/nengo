@@ -72,6 +72,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.4",
     "tslint": "^5.14.0",
     "tslint-config-prettier": "^1.18.0",
