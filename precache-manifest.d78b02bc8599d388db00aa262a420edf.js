@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/nengo/static/css/main.e0d9dc18.chunk.css"
   },
   {
-    "revision": "0ee32e092622533af983805f68d91f0d",
+    "revision": "4c3e9ed7d3abf830d02a5e92ce7a591d",
     "url": "/nengo/index.html"
   }
 ];
